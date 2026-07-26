@@ -1,0 +1,6 @@
+interface:
+  display_name: "So4 Oracle"
+  short_description: "Repo-specific patterns and workflows for so4-oracle"
+  default_prompt: "Use the so4-oracle repo skill to follow existing architecture, testing, and workflow conventions."
+policy:
+  allow_implicit_invocation: true
