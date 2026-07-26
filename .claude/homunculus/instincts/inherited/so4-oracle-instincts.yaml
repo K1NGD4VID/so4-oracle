@@ -1,0 +1,280 @@
+# Instincts generated from https://github.com/K1NGD4VID/so4-oracle
+# Generated: 2026-07-26T17:33:23.958Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: so4-oracle-commit-conventional
+trigger: "when writing a commit message"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: https://github.com/K1NGD4VID/so4-oracle
+---
+
+# So4 Oracle Commit Conventional
+
+## Action
+
+Use conventional commit format with prefixes: fix
+
+## Evidence
+
+- 1 commits analyzed
+- Detected conventional commit pattern
+- Examples: fix: address #548 #549 #559 #561 — startup ordering, config validation, error aggregation, multi-source tests
+
+---
+id: so4-oracle-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/K1NGD4VID/so4-oracle
+---
+
+# So4 Oracle Commit Length
+
+## Action
+
+Write detailed commit messages (~109 characters for first line)
+
+## Evidence
+
+- Average commit message length: 109 chars
+- Based on 1 commits
+
+---
+id: so4-oracle-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/K1NGD4VID/so4-oracle
+---
+
+# So4 Oracle Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: so4-oracle-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/K1NGD4VID/so4-oracle
+---
+
+# So4 Oracle Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: so4-oracle-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/K1NGD4VID/so4-oracle
+---
+
+# So4 Oracle Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: so4-oracle-instinct-file-naming
+trigger: "When creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: K1NGD4VID/so4-oracle
+---
+
+# So4 Oracle Instinct File Naming
+
+## Action
+
+Name the file using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.files: camelCase
+
+---
+id: so4-oracle-instinct-function-naming
+trigger: "When defining a new function"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: K1NGD4VID/so4-oracle
+---
+
+# So4 Oracle Instinct Function Naming
+
+## Action
+
+Use camelCase for the function name
+
+## Evidence
+
+- Pattern in namingConventions.functions: camelCase
+
+---
+id: so4-oracle-instinct-class-naming
+trigger: "When defining a new class or struct"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: K1NGD4VID/so4-oracle
+---
+
+# So4 Oracle Instinct Class Naming
+
+## Action
+
+Use PascalCase for the class or struct name
+
+## Evidence
+
+- Pattern in namingConventions.classes: PascalCase
+
+---
+id: so4-oracle-instinct-constant-naming
+trigger: "When declaring a constant"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: K1NGD4VID/so4-oracle
+---
+
+# So4 Oracle Instinct Constant Naming
+
+## Action
+
+Use SCREAMING_SNAKE_CASE for the constant name
+
+## Evidence
+
+- Pattern in namingConventions.constants: SCREAMING_SNAKE_CASE
+
+---
+id: so4-oracle-instinct-import-style
+trigger: "When importing modules"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: K1NGD4VID/so4-oracle
+---
+
+# So4 Oracle Instinct Import Style
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in importStyle: relative
+
+---
+id: so4-oracle-instinct-export-style
+trigger: "When exporting code from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: K1NGD4VID/so4-oracle
+---
+
+# So4 Oracle Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle: named
+
+---
+id: so4-oracle-instinct-test-location
+trigger: "When adding new tests"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: K1NGD4VID/so4-oracle
+---
+
+# So4 Oracle Instinct Test Location
+
+## Action
+
+Place test files in both source and dedicated test folders as appropriate (mixed location)
+
+## Evidence
+
+- Pattern in architecture.folderStructure.testLocation: mixed
+
+---
+id: so4-oracle-instinct-git-commit-prefix
+trigger: "When writing a commit message for a bug fix"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: K1NGD4VID/so4-oracle
+---
+
+# So4 Oracle Instinct Git Commit Prefix
+
+## Action
+
+Prefix the commit message with 'fix:'
+
+## Evidence
+
+- Pattern in commits.prefixes: fix
+- Seen in commit: fix: address #548 #549 #559 #561 — startup ordering, config validation, error aggregation, multi-source tests
+
+---
+id: so4-oracle-instinct-git-commit-format
+trigger: "When writing a commit message"
+confidence: 0.8
+domain: git
+source: repo-analysis
+source_repo: K1NGD4VID/so4-oracle
+---
+
+# So4 Oracle Instinct Git Commit Format
+
+## Action
+
+Follow the conventional commit format: <type>: <description>
+
+## Evidence
+
+- Pattern in commits.type: conventional
+- Seen in commit: fix: address #548 #549 #559 #561 — startup ordering, config validation, error aggregation, multi-source tests
+
